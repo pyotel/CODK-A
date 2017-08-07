@@ -50,7 +50,7 @@ Default app prints the ASCII table over the serial port.
 To see the output, connect at 9600 bps to the CDC ACM virtual serial port
 the Arduino 101 shows up under, e.g. `/dev/ttyACM0`.
 
-##### Uploading Arduino Sketchby USB Interface in Windows
+##### Uploading Arduino Sketch by USB Interface in Windows
 If you can not see "Arduino 101 Serial Monitor" in Device Manager, you have to execute "Arduino IDE -> Tool -> flashing bootloader".
 
 #### BLE Firmware

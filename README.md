@@ -37,13 +37,21 @@ export CODK_DIR=$(pwd)
 - Both: `make upload`
 
 ##### Using JTAG
-- x86: `make upload-x86-jtag`
+- x86 and bootloader: `make upload-x86-jtag`
 - ARC: `make upload-arc-jtag`
-- Both: `make upload-jtag`
+- Both and bootloader: `make upload-jtag`
+
+##### Using JLINK
+- x86 and bootloader: `make upload-x86-jlink`
+- ARC: `make upload-arc-jlink`
+- Both and bootloader: `make upload-jlink`
 
 Default app prints the ASCII table over the serial port.
 To see the output, connect at 9600 bps to the CDC ACM virtual serial port
 the Arduino 101 shows up under, e.g. `/dev/ttyACM0`.
+
+##### Uploading Arduino Sketchby USB Interface in Windows
+If you can not see "Arduino 101 Serial Monitor" in Device Manager, you have to execute "Arduino IDE -> Tool -> flashing bootloader".
 
 #### BLE Firmware
 Curie ODK requires an updated BLE firmware. If you're on a factory version, please update.    

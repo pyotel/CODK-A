@@ -132,7 +132,8 @@ upload-x86-jtag:
 upload-arc-jtag:
 	cd $(CODK_FLASHPACK_DIR) && ./flash_arc_jtag.sh $(ARC_PROJ_DIR)/arc.bin
 
-upload-jlink: upload-x86-jlink upload-arc-jlink
+upload-jlink:
+	cd $(CODK_FLASHPACK_DIR) && ./flash_jlink.sh
 
 upload-x86-jlink:
 	cd $(CODK_FLASHPACK_DIR) && ./create_flasher.sh
